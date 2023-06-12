@@ -1,0 +1,7 @@
+como descobrir minha senha 
+Netsh wlan show profile TP-Link_C024 key=clear
+kassi996176192
+
+haker jogo do dinossauro google
+Runner.prototype.gameOver = function () {}
+
