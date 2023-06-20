@@ -21,6 +21,11 @@
     --fonte-android:'Android';
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
@@ -112,10 +117,21 @@ main img{
 }
 
 main img.pequena{
-    width: 50%;
+    min-height: 50px;
+    max-width: 400px;
     display: block;
     margin: auto;
+}
 
+main a{
+background-color: var(--cor1);
+text-decoration: none;
+color: var(--cor5);
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
 }
 
 div.video{
@@ -159,6 +175,12 @@ aside h3{
 aside a{
     background-color: var(--cor2);
 }
+
+strong{
+    color: var(--cor5);
+}
+
+
 
 footer{
     background-color: var(--cor5);
