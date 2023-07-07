@@ -1,0 +1,242 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+        }
+
+        thead, tfoot{
+            background-color: rgb(54, 54, 54);
+            color: white;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(54, 54, 54);
+        }
+
+        tbody > tr:nth-child(2n-1){
+             /* se eucolor odd dentro dos parentes vai coloriri apenas as linhas ipares */
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: rgb(248, 248, 248);
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+       
+
+    </style>
+ </head>
+ <body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>População da unidades federativas</caption>
+        <thead>
+            <tr> 
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">00.000.000 </td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">00.000.000 </td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">00.000.000 </td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">00.000.000 </td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">00.000.000 </td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">00.000.000 </td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">00.000.000 </td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">00.000.000 </td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">00.000.000 </td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">00.000.000 </td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">00.000.000 </td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">00.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">00.000.000</td>
+            </tr> 
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="rom">Total de Habitantes</th>
+                <td class="num"><strong>00000000</strong></td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laudantium nihil? Voluptatibus labore nemo consequuntur quod. Ducimus fuga harum ipsam iure esse, quo officiis doloremque minus in, cum velit dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa impedit eos et quo ipsam dignissimos, facilis qui. Saepe quia, placeat eum labore, sequi voluptas architecto dolorem vero, ad necessitatibus eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quaerat velit voluptates? Fugiat iste, reprehenderit sunt accusamus iusto deserunt in distinctio similique nesciunt error sint beatae dolor nisi dignissimos tempore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore modi voluptas placeat nostrum! Atque nostrum deserunt omnis laudantium. Reprehenderit, quod ex? Soluta veniam vitae dolorem maxime veritatis molestias alias magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia doloribus illo deserunt fuga laudantium ratione earum soluta sint voluptatem nostrum esse molestiae explicabo, vero ipsum blanditiis dolore odit iure! lo lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut illum illo culpa dolores neque odit quas, amet ipsam corrupti soluta, voluptatem libero assumenda, tenetur quisquam dicta veritatis magni perferendis! Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam, natus quos itaque unde maxime sapiente quod illo consequatur inventore est odio modi ut, nobis, provident quia possimus delectus perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem vitae quas excepturi vero labore pariatur iure officiis reprehenderit in, voluptate tempora voluptatibus. Nesciunt nihil beatae commodi. Illum aliquid quia accusamus. lo 
+
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laudantium nihil? Voluptatibus labore nemo consequuntur quod. Ducimus fuga harum ipsam iure esse, quo officiis doloremque minus in, cum velit dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa impedit eos et quo ipsam dignissimos, facilis qui. Saepe quia, placeat eum labore, sequi voluptas architecto dolorem vero, ad necessitatibus eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quaerat velit voluptates? Fugiat iste, reprehenderit sunt accusamus iusto deserunt in distinctio similique nesciunt error sint beatae dolor nisi dignissimos tempore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore modi voluptas placeat nostrum! Atque nostrum deserunt omnis laudantium. Reprehenderit, quod ex? Soluta veniam vitae dolorem maxime veritatis molestias alias magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia doloribus illo deserunt fuga laudantium ratione earum soluta sint voluptatem nostrum esse molestiae explicabo, vero ipsum blanditiis dolore odit iure! lo lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut illum illo culpa dolores neque odit quas, amet ipsam corrupti soluta, voluptatem libero assumenda, tenetur quisquam dicta veritatis magni perferendis! Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam, natus quos itaque unde maxime sapiente quod illo consequatur inventore est odio modi ut, nobis, provident quia possimus delectus perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem vitae quas excepturi vero labore pariatur iure officiis reprehenderit in, voluptate tempora voluptatibus. Nesciunt nihil beatae commodi. Illum aliquid quia accusamus. lo 
+        
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laudantium nihil? Voluptatibus labore nemo consequuntur quod. Ducimus fuga harum ipsam iure esse, quo officiis doloremque minus in, cum velit dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa impedit eos et quo ipsam dignissimos, facilis qui. Saepe quia, placeat eum labore, sequi voluptas architecto dolorem vero, ad necessitatibus eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quaerat velit voluptates? Fugiat iste, reprehenderit sunt accusamus iusto deserunt in distinctio similique nesciunt error sint beatae dolor nisi dignissimos tempore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore modi voluptas placeat nostrum! Atque nostrum deserunt omnis laudantium. Reprehenderit, quod ex? Soluta veniam vitae dolorem maxime veritatis molestias alias magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia doloribus illo deserunt fuga laudantium ratione earum soluta sint voluptatem nostrum esse molestiae explicabo, vero ipsum blanditiis dolore odit iure! lo lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut illum illo culpa dolores neque odit quas, amet ipsam corrupti soluta, voluptatem libero assumenda, tenetur quisquam dicta veritatis magni perferendis! Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam, natus quos itaque unde maxime sapiente quod illo consequatur inventore est odio modi ut, nobis, provident quia possimus delectus perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem vitae quas excepturi vero labore pariatur iure officiis reprehenderit in, voluptate tempora voluptatibus. Nesciunt nihil beatae commodi. Illum aliquid quia accusamus. lo 
+        
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laudantium nihil? Voluptatibus labore nemo consequuntur quod. Ducimus fuga harum ipsam iure esse, quo officiis doloremque minus in, cum velit dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa impedit eos et quo ipsam dignissimos, facilis qui. Saepe quia, placeat eum labore, sequi voluptas architecto dolorem vero, ad necessitatibus eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quaerat velit voluptates? Fugiat iste, reprehenderit sunt accusamus iusto deserunt in distinctio similique nesciunt error sint beatae dolor nisi dignissimos tempore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore modi voluptas placeat nostrum! Atque nostrum deserunt omnis laudantium. Reprehenderit, quod ex? Soluta veniam vitae dolorem maxime veritatis molestias alias magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia doloribus illo deserunt fuga laudantium ratione earum soluta sint voluptatem nostrum esse molestiae explicabo, vero ipsum blanditiis dolore odit iure! lo lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut illum illo culpa dolores neque odit quas, amet ipsam corrupti soluta, voluptatem libero assumenda, tenetur quisquam dicta veritatis magni perferendis! Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam, natus quos itaque unde maxime sapiente quod illo consequatur inventore est odio modi ut, nobis, provident quia possimus delectus perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem vitae quas excepturi vero labore pariatur iure officiis reprehenderit in, voluptate tempora voluptatibus. Nesciunt nihil beatae commodi. Illum aliquid quia accusamus. lo 
+        
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laudantium nihil? Voluptatibus labore nemo consequuntur quod. Ducimus fuga harum ipsam iure esse, quo officiis doloremque minus in, cum velit dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa impedit eos et quo ipsam dignissimos, facilis qui. Saepe quia, placeat eum labore, sequi voluptas architecto dolorem vero, ad necessitatibus eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quaerat velit voluptates? Fugiat iste, reprehenderit sunt accusamus iusto deserunt in distinctio similique nesciunt error sint beatae dolor nisi dignissimos tempore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore modi voluptas placeat nostrum! Atque nostrum deserunt omnis laudantium. Reprehenderit, quod ex? Soluta veniam vitae dolorem maxime veritatis molestias alias magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia doloribus illo deserunt fuga laudantium ratione earum soluta sint voluptatem nostrum esse molestiae explicabo, vero ipsum blanditiis dolore odit iure! lo lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut illum illo culpa dolores neque odit quas, amet ipsam corrupti soluta, voluptatem libero assumenda, tenetur quisquam dicta veritatis magni perferendis! Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam, natus quos itaque unde maxime sapiente quod illo consequatur inventore est odio modi ut, nobis, provident quia possimus delectus perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem vitae quas excepturi vero labore pariatur iure officiis reprehenderit in, voluptate tempora voluptatibus. Nesciunt nihil beatae commodi. Illum aliquid quia accusamus. lo 
+        
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laudantium nihil? Voluptatibus labore nemo consequuntur quod. Ducimus fuga harum ipsam iure esse, quo officiis doloremque minus in, cum velit dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa impedit eos et quo ipsam dignissimos, facilis qui. Saepe quia, placeat eum labore, sequi voluptas architecto dolorem vero, ad necessitatibus eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quaerat velit voluptates? Fugiat iste, reprehenderit sunt accusamus iusto deserunt in distinctio similique nesciunt error sint beatae dolor nisi dignissimos tempore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore modi voluptas placeat nostrum! Atque nostrum deserunt omnis laudantium. Reprehenderit, quod ex? Soluta veniam vitae dolorem maxime veritatis molestias alias magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia doloribus illo deserunt fuga laudantium ratione earum soluta sint voluptatem nostrum esse molestiae explicabo, vero ipsum blanditiis dolore odit iure! lo lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut illum illo culpa dolores neque odit quas, amet ipsam corrupti soluta, voluptatem libero assumenda, tenetur quisquam dicta veritatis magni perferendis! Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam, natus quos itaque unde maxime sapiente quod illo consequatur inventore est odio modi ut, nobis, provident quia possimus delectus perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem vitae quas excepturi vero labore pariatur iure officiis reprehenderit in, voluptate tempora voluptatibus. Nesciunt nihil beatae commodi. Illum aliquid quia accusamus. lo 
+        
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laudantium nihil? Voluptatibus labore nemo consequuntur quod. Ducimus fuga harum ipsam iure esse, quo officiis doloremque minus in, cum velit dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa impedit eos et quo ipsam dignissimos, facilis qui. Saepe quia, placeat eum labore, sequi voluptas architecto dolorem vero, ad necessitatibus eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quaerat velit voluptates? Fugiat iste, reprehenderit sunt accusamus iusto deserunt in distinctio similique nesciunt error sint beatae dolor nisi dignissimos tempore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore modi voluptas placeat nostrum! Atque nostrum deserunt omnis laudantium. Reprehenderit, quod ex? Soluta veniam vitae dolorem maxime veritatis molestias alias magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia doloribus illo deserunt fuga laudantium ratione earum soluta sint voluptatem nostrum esse molestiae explicabo, vero ipsum blanditiis dolore odit iure! lo lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut illum illo culpa dolores neque odit quas, amet ipsam corrupti soluta, voluptatem libero assumenda, tenetur quisquam dicta veritatis magni perferendis! Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam, natus quos itaque unde maxime sapiente quod illo consequatur inventore est odio modi ut, nobis, provident quia possimus delectus perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem vitae quas excepturi vero labore pariatur iure officiis reprehenderit in, voluptate tempora voluptatibus. Nesciunt nihil beatae commodi. Illum aliquid quia accusamus. lo 
+        
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laudantium nihil? Voluptatibus labore nemo consequuntur quod. Ducimus fuga harum ipsam iure esse, quo officiis doloremque minus in, cum velit dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa impedit eos et quo ipsam dignissimos, facilis qui. Saepe quia, placeat eum labore, sequi voluptas architecto dolorem vero, ad necessitatibus eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quaerat velit voluptates? Fugiat iste, reprehenderit sunt accusamus iusto deserunt in distinctio similique nesciunt error sint beatae dolor nisi dignissimos tempore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore modi voluptas placeat nostrum! Atque nostrum deserunt omnis laudantium. Reprehenderit, quod ex? Soluta veniam vitae dolorem maxime veritatis molestias alias magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia doloribus illo deserunt fuga laudantium ratione earum soluta sint voluptatem nostrum esse molestiae explicabo, vero ipsum blanditiis dolore odit iure! lo lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut illum illo culpa dolores neque odit quas, amet ipsam corrupti soluta, voluptatem libero assumenda, tenetur quisquam dicta veritatis magni perferendis! Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam, natus quos itaque unde maxime sapiente quod illo consequatur inventore est odio modi ut, nobis, provident quia possimus delectus perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem vitae quas excepturi vero labore pariatur iure officiis reprehenderit in, voluptate tempora voluptatibus. Nesciunt nihil beatae commodi. Illum aliquid quia accusamus. lo 
+        
+    </p>
+ </body>
+ </html>
