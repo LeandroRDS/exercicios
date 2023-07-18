@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Humbrguinho</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">teste1</a></li>
+                <li><a href="#">teste2</a></li>
+                <li><a href="#">teste3</a></li>
+                <li><a href="#">teste4</a></li>
+                <li><a href="#">teste5</a></li>
+                <li><a href="#">teste6</a></li>
+                <li><a href="#">teste7</a></li>
+                <li><a href="#">teste8</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure nobis magni fugit ullam doloribus nulla delectus neque dolor culpa magnam facilis odio quisquam, laborum natus vel architecto. Eaque, voluptatum consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim similique eaque doloremque unde atque excepturi possimus beatae, dignissimos voluptates ex quam fugiat id deserunt, voluptas cum reprehenderit debitis accusantium. Natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, alias aspernatur! Provident inventore error cupiditate a obcaecati aut quibusdam quam sed sit amet vitae dolorum maxime assumenda quaerat, veritatis placeat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolor ea doloremque fuga veniam deleniti quaerat unde est expedita quis nesciunt veritatis officiis fugit suscipit, adipisci illum, tempora quam nisi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nemo impedit officiis sed molestias maiores assumenda error, reprehenderit qui pariatur, molestiae accusantium rem quos architecto expedita voluptatem at itaque et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus error rem soluta consequatur, aut quod consectetur vel iure itaque similique magni voluptate odit rerum voluptatibus voluptates doloremque? Deserunt, consequatur? 
+            </p> 
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure nobis magni fugit ullam doloribus nulla delectus neque dolor culpa magnam facilis odio quisquam, laborum natus vel architecto. Eaque, voluptatum consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim similique eaque doloremque unde atque excepturi possimus beatae, dignissimos voluptates ex quam fugiat id deserunt, voluptas cum reprehenderit debitis accusantium. Natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, alias aspernatur! Provident inventore error cupiditate a obcaecati aut quibusdam quam sed sit amet vitae dolorum maxime assumenda quaerat, veritatis placeat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolor ea doloremque fuga veniam deleniti quaerat unde est expedita quis nesciunt veritatis officiis fugit suscipit, adipisci illum, tempora quam nisi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nemo impedit officiis sed molestias maiores assumenda error, reprehenderit qui pariatur, molestiae accusantium rem quos architecto expedita voluptatem at itaque et?
+            </p>
+
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
