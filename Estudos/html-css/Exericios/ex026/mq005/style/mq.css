@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* Telas grandes  */
+
+
+@media screen and (min-width:768px) {
+  i#burguer{
+    display: none;
+  }
+
+  menu{
+    display: block;
+  }
+
+    menu > ul > li {
+      display: inline-block;
+    }assumenda quaerat, veritatis placeat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis 
+
+    main{
+      width: 768px;
+    }
+
+}
