@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eu fiz</title>
+</head>
+<body>
+    <p>Em qual pais você morra? </p>
+    <input type="text" name="name-loc" id="id-loc">
+    <input type="button" value="OK" id="id-ok" >
+    <div id="id-res">s</div>
+
+    <script>
+        var btn_ok = window.document.querySelector('input#id-ok')
+        btn_ok.addEventListener('click', clicar)
+
+        function clicar(){
+            var res = window.document.querySelector('div#id-res')
+            var loc = window.document.querySelector('input#id-loc')
+            var loctxt = String(loc.value)
+            if((loctxt == 'Brasil') || (loctxt == 'brasil') ){
+                res.innerHTML = 'Brasileiro'
+            }else{
+                res.innerHTML = 'estrangeiro'
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>varificador de idade </title>
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>VArificador de idade</h1>
+    </header>
+    <section>
+        <div id="id-msg">
+            <p>
+                Ano de nascimento
+                <input type="number" name="name_txt_ano" id="id_txt_ano">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="name_radio_sexo" id="id_radio_sexo_m" checked>
+                <label for="id_radio_sexo">Masculino</label>
+                <input type="radio" name="name_radio_sexo" id="id_radio_sexo_f">
+                <label for="id_radio_sexo_f">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Preenchaos dados assima para ver os resultados
+        </div>
+    </section>
+    <footer>
+        <p>
+            &copy; Curso em video
+        </p>
+    </footer>
+    
+    <script src="script/script.js"></script>
+
+</body>
+</html>
