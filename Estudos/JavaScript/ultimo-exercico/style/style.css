@@ -3,6 +3,7 @@
 body{
     background-color: rgb(7, 7, 255);
     font: normal 1.5em Arial;
+    margin: auto;
 }
 
 header{
@@ -14,7 +15,6 @@ section{
     background-color: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
 }
@@ -22,11 +22,18 @@ section{
 div{
     text-align: center;
     padding: 8px;
-    width: 600px;
 }
-p{
-    width: 500px;
+
+select{
+    height: 100px;
+    width: 300px;
+    margin: 10px;
+    border: 2px solid black;
     
+}
+
+select::-webkit-scrollbar{
+    display: none;
 }
 
 footer{

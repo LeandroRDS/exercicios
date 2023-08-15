@@ -1,31 +1,67 @@
-function contar(){
-    let inicio = document.getElementById('id-txt-inicio')
-    let fim = document.getElementById('id-txt-fim')
-    let passo = document.getElementById('id-txt-passo')
-    let res = document.getElementById('id-res')
+let numero = document.querySelector('input#id-numero')
+let fLista = document.querySelector('select#id-flista')
+let res = document.querySelector('div#id-res')
+let valores =  []
 
-    if(inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
-        window.alert('faltam dados')
+function isNumero(n){
+    if(Number(n) >= 1 && Number(n) <=100){
+        return true
     }else{
-        res.innerHTML = 'contando...'
-        let i = Number(inicio.value)
-        let f = Number(fim.value)
-        let p = Number(passo.value)
-        if(p <= 0){
-            window.alert('Passo invalido, considerndo PASSO 1')
-            p = 1
-        }
-        if(i < f){
-            res.innerHTML = 'deu'
-            for(let c = i; c <= f; c += p){
-                res.innerHTML += ` ${c}, \u{1F449}` 
+        return false
+    }
+}
+
+function inLista(n, l){
+    if(l.indexOf(Number(n)) != -1){
+        return true
+    }else{
+        return false
+    }
+}
+
+function adicionar(){
+    res.innerHTML = ''
+    if(isNumero(numero.value) && !inLista(numero.value, valores)){
+        valores.push(Number(numero.value))
+        let item = document.createElement('option')
+        item.text = `valor ${numero.value} adicionado`
+        fLista.appendChild(item)
+    }else{
+        res.innerHTML = 'Número Invalido'
+    }
+
+    numero.value = ''
+    
+    numero.focus()
+}
+
+function finalizar(){
+    if(valores.length == 0){
+        window.alert('Adicione valores antes de finalizar')
+    }else{
+        let total = valores.length
+        let maior = valores[0]
+        let menor = valores[0]
+        let soma = 0
+        let media = 0
+        for(let pos in valores){
+            soma += valores[pos]
+            if(valores[pos] > maior){
+                maior = valores[pos]
             }
-            
-        }else{
-            for(let c = i; c >= f; c -= p){
-                res.innerHTML += ` ${c}, \u{1F449}`
+            if(valores[pos] < menor){
+                menor = valores[pos]
             }
         }
-        res. innerHTML += ` \u{1F3C1}`
+
+        media = soma / total
+
+        res.innerHTML = ''
+        res.innerHTML += `<p>Ao todo, temos ${total} números cadatrados</p>`
+        res.innerHTML += `<p>O maior valor emcontado foi ${maior}. </
+        p>`
+        res.innerHTML += `<p>O menor valor encontrado foi ${menor}. </p>`
+        res.innerHTML += `<p>Somando todos os valores temos ${soma} </p>`
+        res.innerHTML += `<p>a media dos valores digitado são ${media} </p>`
     }
 }
